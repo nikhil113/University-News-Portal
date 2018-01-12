@@ -1,0 +1,124 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+        </result-types>
+        
+        <action name="login" class="com.action.LoginValidationAction">
+            
+            <result name="success" type="tiles">/home</result>
+            <result name="false">index.jsp</result>
+            
+        </action>
+        
+        <action name="home">
+            <result type="tiles">/home</result>
+            
+         </action>
+         
+         <action name="addnews">
+             
+             <result type="tiles">/addnews</result>
+         </action>
+         
+         <action name="regist">
+             <result>registration.jsp</result>
+         </action>
+         
+         
+         
+         <action name="signup" class="com.action.RegistrationAction">
+             
+             <result name="success">index.jsp</result>
+             <result name="failed">registration.jsp</result>
+         </action>
+         
+         <action name="signout" class="com.action.LogoutAction">
+             
+             <result name="success">index.jsp</result>
+         </action>
+         
+         <action name="authenticate">
+             <result type="tiles">/userauthentication</result>
+         </action>
+         
+         <action name="user_authentication" class="com.action.User_Authentication_Action">
+             
+             <result name="success" type="tiles">/userauthentication</result>
+         </action>
+         
+         <action name="passwordchange">
+             
+             <result type="tiles">/changepassword</result>
+             
+         </action>
+         
+         <action name="passwordaction" class="com.action.ChangePasswordAction">
+            <result name="success" type="tiles">/home</result>
+            <result name="failed" type="tiles">/changepassword</result>
+             
+         </action>
+         
+         <action name="allocateresource">
+             
+             <result type="tiles">/allocateresource</result>
+             
+         </action>
+         
+         <action name="student_resource_allocation" class="com.action.ResourceAllocationAction">
+             
+             <result type="tiles">/home</result>
+         </action>
+         
+         <action name="add" class="com.action.AddNewsAction">
+             <result name="success" type="tiles">/home</result>
+             
+             <result name="failed" type="tiles">/addnews</result>
+         </action>
+         
+         <action name="show_news1" class="com.action.ShowNewsAction">
+             <result name="success" type="tiles">/show1</result>
+         </action>
+         
+         <action name="show_news2" class="com.action.ShowNewsAction">
+             <result name="success" type="tiles">/show2</result>
+         </action>
+         
+         <action name="show_news3" class="com.action.ShowNewsAction">
+             <result name="success" type="tiles">/show3</result>
+         </action>
+         
+         
+         <action name="rolechange">
+             <result type="tiles">/rolechange</result>
+         </action>
+         
+         <action name="role_changing" class="com.action.RoleChangingAction">
+             
+             <result name="success" type="tiles">/home</result>
+             
+         </action>
+         
+         
+         <action name="rolechangerequest">
+             
+             <result type="tiles">/rolechangerequest</result>
+         </action>
+         
+         <action name="request_done" class="com.action.RoleChangingRequestAction">
+             <result name="success" type="tiles">/rolechangerequest</result>
+         </action>
+         
+         <action name="direct_to_login">
+             <result>index.jsp</result>
+         </action>
+                 
+        
+    </package>
+</struts>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+                   <definition name="/home" template="/home.jsp">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/body.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition> 
+                    
+                    <definition name="/addnews" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/addnews.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    <definition name="/userauthentication" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/authenticate_user.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    <definition name="/changepassword" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/change_password.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    <definition name="/allocateresource" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/allocate_resource.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    <definition name="/show1" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/show1.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    <definition name="/show2" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/show2.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                     <definition name="/show3" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/show3.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    
+                    <definition name="/rolechange" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/rolechange.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+                    
+                    <definition name="/rolechangerequest" extends="/home">
+                   <put-attribute name="header" value="/header.jsp" />
+                   <put-attribute name="menu" value="/menu.jsp" />
+                   <put-attribute name="body" value="/rolechangerequest.jsp" />
+                   <put-attribute name="footer" value="/footer.jsp" />
+                    </definition>
+                    
+
+
+</tiles-definitions>
