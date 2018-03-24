@@ -12,7 +12,7 @@ Student Ativity News: It includes notice about some urgent session of the club, 
 					
 
 					
-Types of roles a user can belong:
+Types of roles to which a user can belong:
 
 1. Admin
 2. Professor
