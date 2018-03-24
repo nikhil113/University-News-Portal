@@ -1,4 +1,4 @@
-                                                                 University-News-Portal
+                                                 University-News-Portal
 
 University News Portal consists of three kinds of News section: University News Section, Department News Section and Student Activity News Section.
 
@@ -9,6 +9,8 @@ Department News Section: It includes notice about some urgent class, notice abou
 
 Student Ativity News: It includes notice about some urgent session of the club, notice about some event of the club and things like that. Student Activity News will be posted by
 					  the head of the club.
+					
+
 					
 Types of roles a user can belong:
 
